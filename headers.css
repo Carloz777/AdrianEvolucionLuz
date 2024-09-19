@@ -1,0 +1,26 @@
+/* General settings for the header */
+header {
+    background-color: #333; /* Color de fondo del header */
+    color: white; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffcc00; /* Línea en la parte inferior */
+}
+
+/* Estilo para el logo */
+header .logo {
+    width: 100px; /* Tamaño ajustado del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el título */
+header h1 {
+    font-size: 3em; /* Tamaño grande del título */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si prefieres otra */
+    text-transform: uppercase; /* Hace que todo el texto sea mayúscula */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    color: #ffcc00; /* Color del título */
+}

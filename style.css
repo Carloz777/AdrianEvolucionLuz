@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8; /* Puedes cambiar el color de fondo si es necesario */
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+footer .social-icons a img {
+    width: 24px; /* Tamaño de los íconos */
+    height: 24px;
+}
+
+footer button a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+}
+
+footer button:hover {
+    text-decoration: underline;
+}
