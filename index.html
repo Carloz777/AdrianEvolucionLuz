@@ -9,30 +9,33 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fcfbfc;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         header {
-            background-color: #333333ea;
-            color: rgb(255, 255, 255);
+            background-color: #E8E8E8;
+            color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         header img {
-            max-width: 200px;
+            width: 20%;
             height: auto;
         }
 
         .title {
             background-color: #28a745;
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .product-section {
@@ -40,118 +43,99 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
         }
 
-        .product {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
         }
 
-        .product img {
-            max-width: 70%;
+        .product-image img {
+            max-width: 80%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
-        .product h2 {
-            font-size: 1.5rem;
-            margin: 10px 0;
+        .product-title {
+            font-size: 1.2rem;
+            margin: 8px 0;
+            color: #333;
+            cursor: pointer;
+            text-align: center;
         }
 
-        .product p {
-            font-size: 1rem;
-            color: #666;
+        .product-price {
+            font-size: 1.3rem;
+            color: #FF5722;
+            margin: 8px 0;
+            cursor: pointer;
+            text-align: center;
         }
 
         .buy-button {
             display: inline-block;
             background-color: #28a745;
             color: white;
-            padding: 10px 20px;
-            margin-top: 15px;
-            border: none;
+            padding: 8px 15px;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
+            margin-top: 15px;
         }
 
         .buy-button:hover {
             background-color: #218838;
         }
 
-        .carousel {
-            overflow: hidden;
-            position: relative;
-            max-width: 70%;
-        }
-
-        .carousel-track {
+        .whatsapp-btn {
             display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .carousel-item {
-            min-width: 300px;
-            margin: 15px;
-        }
-
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
+            align-items: center;
+            background-color: #25D366;
             color: white;
-            font-size: 2rem;
-            padding: 10px;
-            cursor: pointer;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
         }
 
-        .carousel-btn.left {
-            left: 10px;
+        .whatsapp-btn img {
+            width: 18px;
+            margin-right: 8px;
         }
 
-        .carousel-btn.right {
-            right: 10px;
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
         }
 
         footer {
             background-color: #333;
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
         }
 
-        footer .social-icons {
-            margin-top: 15px;
-        }
-
         footer .social-icons img {
-            width: 40px;
-            margin: 0 10px;
+            width: 35px;
+            margin: 0 8px;
             cursor: pointer;
             vertical-align: middle;
         }
 
         footer p {
             margin: 0;
-            padding: 10px 0;
+            padding: 5px 0;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .product-section {
                 grid-template-columns: 1fr;
-            }
-
-            .carousel-item {
-                min-width: 100%;
             }
         }
     </style>
@@ -162,106 +146,95 @@
         <img src="TituloEvolucion.jpg" alt="EvoLUZcion Logo">
     </header>
 
-    <div class="title">Decarga nuestro Catalogo y consultanos por Redes Sociales</div>
+    <div class="title">Descarga nuestro Catálogo y consúltanos por Redes Sociales</div>
 
     <section class="product-section">
-        <div class="product">
-            <img src="producto1.jpg" alt="Enchufe">
-            <h2>Enchufes</h2>
-            <p>Todo tipo de conectores</p>
-            <a href="https://wa.me/5493517910019?text=Quiero+comprar+Enchufe" class="buy-button">Compra Ahora</a>
-        </div>
-
-        <div class="product">
-            <img src="producto2.jpg" alt="Lámpara">
-            <h2>Interruptor</h2>
-            <p>Lamparas de bajo consumo</p>
-            <a href="https://wa.me/5493517910019?text=Quiero+comprar+Lámpara" class="buy-button">Compra Ahora</a>
-        </div>
-
-        <div class="product">
-            <img src="producto3.jpg" alt="Guante">
-            <h2>Guante</h2>
-            <p>Guantes de Seguridad EPP </p>
-            <a href="https://wa.me/5493517910019?text=Quiero+comprar+Guante" class="buy-button">Compra Ahora</a>
-        </div>
-
-
-        <style>
-            footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #f8f8f8; /* Puedes cambiar el color de fondo si es necesario */
-                padding: 20px;
-                position: relative;
-                width: 100%;
-                bottom: 0;
-            }
-        
-            footer p {
-                margin: 0;
-            }
-        
-            footer .social-icons {
-                display: flex;
-                gap: 10px; /* Espacio entre los íconos */
-            }
-        
-            footer .social-icons a img {
-                width: 24px; /* Tamaño de los íconos */
-                height: 24px;
-            }
-        
-            footer button a {
-                text-decoration: none;
-                color: black;
-                font-size: 18px;
-            }
-        
-            footer button {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-                padding: 0;
-                margin-left: 20px;
-            }
-        
-            footer button:hover {
-                text-decoration: underline;
-            }
-        </style>
-        
-        <footer>
-            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-            <div>
-                <button><a href="prueba_de_excel.xls" download="prueba_de_excel.xls">Catálogo</a></button>
-                <button><a href="PRUEBA_PDF_1.pdf" download="PRUEBA_PDF_1.pdf">Descargar</a></button>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="producto1.jpg" alt="Producto 1">
             </div>
-            <div class="social-icons">
-                <a href="https://wa.me/5493517910019" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </a>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-                </a>
+            <h1 contenteditable="true" class="product-title" id="product1-title">Parlantes Potenciados</h1>
+            <p contenteditable="true" class="product-price" id="product1-price">$150000</p>
+            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product1-whatsapp" target="_blank">
+                <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="producto2.jpg" alt="Producto 2">
             </div>
-        </footer>
-        
+            <h1 contenteditable="true" class="product-title" id="product2-title">Sistema de Seguridad</h1>
+            <p contenteditable="true" class="product-price" id="product2-price">$1539532</p>
+            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product2-whatsapp" target="_blank">
+                <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="producto3.jpg" alt="Producto 3">
+            </div>
+            <h1 contenteditable="true" class="product-title" id="product3-title">Guantes de Seguridad EPP</h1>
+            <p contenteditable="true" class="product-price" id="product3-price">$42500</p>
+            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product3-whatsapp" target="_blank">
+                <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>Dirección: Av. congreso N° 5182, Barrio Villa Libertador, Cordoba</p>
+        <div>
+            <button><a href="prueba_de_excel.xls" download="prueba_de_excel.xls">Catálogo</a></button>
+            <button><a href="PRUEBA_PDF_1.pdf" download="PRUEBA_PDF_1.pdf">Descargar</a></button>
+        </div>
+        <div class="social-icons">
+            <a href="https://wa.me/5493517910019" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <!-- Botón de Google Maps -->
+            <a href="https://maps.app.goo.gl/t6ap5yJq5v9UFLrx6" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/google-maps.png" alt="Google Maps" style="width: 35px;">
+
+
+
+
+            </a>
+        </div>
+    </footer>    
+    
 
     <script>
-        let currentSlide = 0;
-        const track = document.querySelector('.carousel-track');
-        const items = document.querySelectorAll('.carousel-item');
+        function updateWhatsAppLinks() {
+            // Producto 1
+            const product1Title = document.getElementById('product1-title').innerText;
+            const product1Price = document.getElementById('product1-price').innerText;
+            document.getElementById('product1-whatsapp').href = `https://wa.me/5493517910019?text=Hola!%20me%20interesa%20el%20producto%20${encodeURIComponent(product1Title)}%20que%20cuesta%20${encodeURIComponent(product1Price)}`;
 
-        function moveCarousel(direction) {
-            const totalItems = items.length;
-            currentSlide = (currentSlide + direction + totalItems) % totalItems;
-            track.style.transform = `translateX(-${currentSlide * 300}px)`;
+            // Producto 2
+            const product2Title = document.getElementById('product2-title').innerText;
+            const product2Price = document.getElementById('product2-price').innerText;
+            document.getElementById('product2-whatsapp').href = `https://wa.me/5493517910019?text=Hola!%20me%20interesa%20el%20producto%20${encodeURIComponent(product2Title)}%20que%20cuesta%20${encodeURIComponent(product2Price)}`;
+
+            // Producto 3
+            const product3Title = document.getElementById('product3-title').innerText;
+            const product3Price = document.getElementById('product3-price').innerText;
+            document.getElementById('product3-whatsapp').href = `https://wa.me/5493517910019?text=Hola!%20me%20interesa%20el%20producto%20${encodeURIComponent(product3Title)}%20que%20cuesta%20${encodeURIComponent(product3Price)}`;
         }
+
+        // Llama a la función cuando el contenido cambia
+        document.querySelectorAll('.product-title, .product-price').forEach(item => {
+            item.addEventListener('input', updateWhatsAppLinks);
+        });
+
+        // Actualiza los enlaces de WhatsApp cuando se cargue la página
+        window.onload = updateWhatsAppLinks;
     </script>
 
 </body>

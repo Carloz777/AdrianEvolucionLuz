@@ -13,7 +13,7 @@ header {
 header .logo {
     width: 100px; /* Tamaño ajustado del logo */
     height: auto; /* Mantiene la proporción */
-    margin-right: 20px; /* Espacio entre el logo y el título */
+    margin-right: 40px; /* Espacio entre el logo y el título */
 }
 
 /* Estilo para el título */
