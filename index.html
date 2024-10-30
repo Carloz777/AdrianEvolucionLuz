@@ -155,7 +155,7 @@
             </div>
             <h1 contenteditable="true" class="product-title" id="product1-title">Led de bajo consumo.</h1>
             <p contenteditable="true" class="product-price" id="product1-price">"colores, para tu vida."</p>
-            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product1-whatsapp" target="_blank">
+            <a href="https://wa.me/5493513038119?text=" class="whatsapp-btn" id="product1-whatsapp" target="_blank">
                 <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
                 <span>Contactar por WhatsApp</span>
             </a>
@@ -167,7 +167,7 @@
             </div>
             <h1 contenteditable="true" class="product-title" id="product2-title">Llaves Termicas.</h1>
             <p contenteditable="true" class="product-price" id="product2-price">"seguridad para tu casa"</p>
-            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product2-whatsapp" target="_blank">
+            <a href="https://wa.me/5493513038119?text=" class="whatsapp-btn" id="product2-whatsapp" target="_blank">
                 <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
                 <span>Contactar por WhatsApp</span>
             </a>
@@ -179,7 +179,7 @@
             </div>
             <h1 contenteditable="true" class="product-title" id="product3-title">Led con sensores</h1>
             <p contenteditable="true" class="product-price" id="product3-price">"olvidate de los interruptores"</p>
-            <a href="https://wa.me/5493517910019?text=" class="whatsapp-btn" id="product3-whatsapp" target="_blank">
+            <a href="https://wa.me/5493513038119?text=" class="whatsapp-btn" id="product3-whatsapp" target="_blank">
                 <img src="https://image.pngaaa.com/240/1760240-middle.png" alt="WhatsApp" />
                 <span>Contactar por WhatsApp</span>
             </a>
@@ -194,12 +194,12 @@
             <button><a href="catalogo evolucion led.pdf" download="catalogo evolucion led.pdf">Descargar</a></button>
         </div>
         <div class="social-icons">
-            <a href="https://wa.me/5493517910019?text=%F0%9F%91%8B%20Hola%20😊%20Quer%C3%ADa%20hacerte%20una%20consulta%20sobre%20tus%20productos%20%F0%9F%92%A1" target="_blank">
+            <a href="https://wa.me/5493513038119?text=%F0%9F%91%8B%20Hola%20😊%20Quer%C3%ADa%20hacerte%20una%20consulta%20sobre%20tus%20productos%20%F0%9F%92%A1" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             </a>
             
             
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://www.instagram.com/evolucionled/?igsh=MXFjM3o1dHVnbWttaA%3D%3D" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             </a>
             <!-- Botón de Google Maps -->
@@ -215,33 +215,32 @@
     
 
     <script>
-function updateWhatsAppLinks() {
-    // Producto 1
-    const product1Title = document.getElementById('product1-title').innerText;
-    const product1Price = document.getElementById('product1-price').innerText;
-    document.getElementById('product1-whatsapp').href = `https://wa.me/5493517910019?text=🎵 Hola! Me interesa el producto ${product1Title}, ${product1Price}';
-
-    // Producto 2
-    const product2Title = document.getElementById('product2-title').innerText;
-    const product2Price = document.getElementById('product2-price').innerText;
-    document.getElementById('product2-whatsapp').href = `https://wa.me/5493517910019?text=🛡️ Hola! Me interesa el producto ${product2Title},  ${product2Price}`;
-
-    // Producto 3
-    const product3Title = document.getElementById('product3-title').innerText;
-    const product3Price = document.getElementById('product3-price').innerText;
-    document.getElementById('product3-whatsapp').href = `https://wa.me/5493517910019?text=🧤 Hola! Me interesa el producto ${product3Title},  ${product3Price}`;
-}
-
-// Llama a la función cuando el contenido cambia
-document.querySelectorAll('.product-title, .product-price').forEach(item => {
-    item.addEventListener('input', updateWhatsAppLinks);
-});
-
-// Actualiza los enlaces de WhatsApp cuando se cargue la página
-window.onload = updateWhatsAppLinks;
-
-
-    </script>
+        function updateWhatsAppLinks() {
+            // Producto 1
+            const product1Title = document.getElementById('product1-title').innerText;
+            const product1Price = document.getElementById('product1-price').innerText;
+            document.getElementById('product1-whatsapp').href = `https://wa.me/5493513038119?text=🎵 Hola! Me interesa el producto ${product1Title}, ${product1Price}`;
+        
+            // Producto 2
+            const product2Title = document.getElementById('product2-title').innerText;
+            const product2Price = document.getElementById('product2-price').innerText;
+            document.getElementById('product2-whatsapp').href = `https://wa.me/5493513038119?text=🛡️ Hola! Me interesa el producto ${product2Title}, ${product2Price}`;
+        
+            // Producto 3
+            const product3Title = document.getElementById('product3-title').innerText;
+            const product3Price = document.getElementById('product3-price').innerText;
+            document.getElementById('product3-whatsapp').href = `https://wa.me/5493513038119?text=🧤 Hola! Me interesa el producto ${product3Title}, ${product3Price}`;
+        }
+        
+        // Llama a la función cuando el contenido cambia
+        document.querySelectorAll('.product-title, .product-price').forEach(item => {
+            item.addEventListener('input', updateWhatsAppLinks);
+        });
+        
+        // Actualiza los enlaces de WhatsApp cuando se cargue la página
+        window.onload = updateWhatsAppLinks;
+        </script>
+        
     
 </body>
 </html>
